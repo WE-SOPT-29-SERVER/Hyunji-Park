@@ -5,5 +5,6 @@ const router = express.Router();
 router.post("/signup", require("./userSignupPOST"));
 // /user/login
 router.post("/login", require("./userLoginPOST"));
-
+// /user/profile/:id
+router.get("/profile/:id", require("./userProfileGET"));
 module.exports = router;
